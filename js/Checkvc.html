@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function countvowlcons()
+      {
+          var s = (document.getElementById("txtstr").value).toLowerCase();
+          var v=0;
+          var c=0;
+          for(i=0;i<s.length;i++)
+          {
+              if(s[i]=='a' || s[i]=='e' || s[i]=='i' || s[i] =='o' || s[i] =='u')
+              {
+                  v++;
+              }
+              else
+              {
+                  c++;
+              }
+          }
+          document.write("Total vowel is "+v + "Total Consonent is "+c);
+
+      }
+    </script>
+</head>
+<body>
+    
+    Enter any String
+    <br>
+    <input type="text" id="txtstr" />
+    <br>
+    <input type="button" id="btnclick" value="Click" onclick="countvowlcons()" />
+</body>
+</html>

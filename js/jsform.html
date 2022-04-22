@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun()
+        {
+           var name = window.document.frm.txtname.value;
+           alert(name);
+           var fname=document.getElementById("txtname").value;
+           document.getElementById("sp").innerHTML = fname;
+           
+        }
+
+    </script>
+</head>
+<body>
+    <form name="frm">
+        <input type="text" name="txtname" id="txtname" />
+        <br>
+        <input type="button" name="btn" value="Click" onclick="fun()" />
+
+    </form>
+    <span id="sp">   </span>
+</body>
+</html>

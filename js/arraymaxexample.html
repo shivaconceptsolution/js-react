@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        x = [2,34,45,67,89,71,11,34]
+        max=0
+        smax=0
+        tmax=0
+        for(i=0;i<x.length;i++)
+        {
+            if(max<x[i])
+            {
+                tmax=smax;
+                smax=max;
+                max=x[i];
+            }
+            else if(smax<x[i])
+            {
+                tmax=smax;
+                smax=x[i];
+            }
+            else if(tmax<x[i])
+            {
+                tmax=x[i];
+            }
+
+        }
+        document.write(max +  " " + smax + " "+tmax);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

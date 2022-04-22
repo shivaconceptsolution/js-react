@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      s = [12,34,45,67,12]
+      function displayEven(a)
+      {
+          if(a%2==0)
+          {
+              return a;
+          }
+         return 0;
+      }
+     var data= s.map(displayEven);
+     for(i=0;i<data.length;i++)
+     {
+         document.write(data[i] + " ");
+     }
+     function func()
+     {
+     course = ["C","CPP","JAVA","PHP"];
+     document.getElementById("res").innerHTML=course.valueOf();
+     }
+    </script>
+
+</head>
+<body onload="func()">
+    <div id="res"></div>
+</body>
+</html>

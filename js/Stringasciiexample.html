@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var s = "hello";
+        s1="";
+       for(i=0;i<s.length;i++)
+       {
+           asc = s[i].charCodeAt();
+          
+           if(asc>=65 && asc<=90)
+           {
+              s1 = s1  + String.fromCharCode(asc+32);
+           }
+           else
+           {
+            s1 = s1  + String.fromCharCode(asc-32);
+           }
+       }
+
+       document.write(s1);
+  
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

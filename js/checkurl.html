@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var s = "http://ab.a";
+        var prt = s.substring(0,5);
+        var prt1 = s.substring(0,6);
+        var dslash = s.substring(5,7);
+        var dslash1 = s.substring(6,8);
+        var dotpos = s.lastIndexOf(".");
+        var slashindex = s.indexOf("/");
+        var domain = dotpos-slashindex;
+      //  var domain1 = dotpos-dslash1;
+        var dtype = s.length-dotpos;
+       
+        document.write("Protocol "+ prt + "Dot position" + dotpos + "domain is "+ domain + " Slash index"+ slashindex);
+        if(prt != "http:")
+        {
+           
+           document.write("Invalid protocol ");
+        }
+        else if(dslash!="//" )
+        {
+            document.write("Invalid // ");
+        }
+        else if(domain<=2)
+        {
+            document.write("Invalid domain ");
+        }
+        else if(dtype<=1)
+        {
+            document.write("Invalid domain type ");
+        }
+        else
+        {
+            document.write("Correct domain");
+        }
+
+    </script>
+</head>
+<body>
+    
